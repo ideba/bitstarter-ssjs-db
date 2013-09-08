@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Data Stars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -97,26 +97,13 @@
       .footer a {
         color: #ccccff;
       }
+   /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+ div.addthis_toolbox {
+  width:180px;
+  margin: 0 auto;
+ }
 
-     /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
-     div.addthis_toolbox {
-      width: 174px;
-      margin: 0 auto;
-     }
     </style>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-42843113-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
   </head>
   <body>
 
@@ -136,7 +123,6 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="/orders">Orders</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -153,26 +139,25 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product: Development Version</h1>
+          <h1>Data Stars</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">We empower young data scientists!</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="http://gencept.com/wp-content/uploads/2013/02/Sight-An-8-Minute-Augmented-Reality-Journey_04-@-GenCept.jpg">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
-          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="row-fluid statistics">
+            <div class="statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -193,7 +178,6 @@
               </div>
             </div>
           </div>
-          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -202,14 +186,12 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
-          </div>
-          <div class="row-fluid">
           <div class="span6 offset3 order">
-	    <a class="coinbase-button" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" data-code="13b56883764b54e6ab56fef3bcc7229c" href="https://coinbase.com/checkouts/13b56883764b54e6ab56fef3bcc7229c">Preorder with Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-	  </div>
+            <a class="coinbase-button" data-code="2997bbcd5b15cfffc076d8f6cf5346ea" data-button-style="custom_small" href="https://coinbase.com/checkouts/2997bbcd5b15cfffc076d8f6cf5346ea">Pay With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
           </div>
-          <div class="row-fluid">
           <div class="span8 offset2 social">
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <!-- AddThis Button BEGIN -->
             <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
               <a class="addthis_button_preferred_1"></a>
@@ -217,14 +199,15 @@
               <a class="addthis_button_compact"></a>
               <a class="addthis_counter addthis_bubble_style"></a>
             </div>
-	     <script type="text/javascript">var addthis_config = 
-	      {"data_track_addressbar":true};</script>
-	     <script type="text/javascript" 
- 		     src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e5f5d9549fdf9b"></script>
+             <script type="text/javascript">var addthis_config = 
+              {"data_track_addressbar":true};</script>
+             <script type="text/javascript" 
+                     src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e5f5d9549fdf9b"></script>
             <!-- AddThis Button END -->
+            <!--button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button-->
           </div>
-          </div>
-        </div>
+           
         </div>
       </div>
 
@@ -234,21 +217,11 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="http://www.visualizing.org/sites/default/files/imagecache/embedded_vis_medium/images/mapternet.jpg">
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+           These are the data science and machine learning projects being showcased here on this website to enable the people behind them to take their projects to the next level of production through the power of crowd funding.
           </p>
         </div>
       </div>
@@ -256,21 +229,11 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            The website also provides good social networking features to increase collaboration and sharing of ideas and cutting edge data science techniques among the new generation of young data scientists so that they can together to solve some of the coolest problems in science,egineering,sociology and economics.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="http://people.cs.uchicago.edu/~dinoj/vis/partiview/yaleiso_closeup.jpg">
         </div>
       </div>
 
@@ -285,12 +248,12 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    What exactly we are building?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
+                    We are building a platform to create,nurture and motivate more young people to take up data science and solve real world problems for organizations of all types. 
                   </div>
                 </div>
               </div>
@@ -298,12 +261,12 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    Why we need croudfunding money for this simple idea?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    We are building a very sophisticated backend infrastructure to support the heavy data processng requirements for projects that require our backend parallel system architecture.It's more like Kaggle for the rest of us!
                   </div>
                 </div>
               </div>
@@ -324,16 +287,5 @@
         </div>
       </div>
     </div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42843113-1', 'bitstart.net');
-  ga('send', 'pageview');
-
-</script>
   </body>
 </html>
